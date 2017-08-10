@@ -85,3 +85,47 @@ type in the terminal: cordova run ios
 check on your device
 :: on LINUX -- to check
 same as mac installation :)
+
+
+HOW TO BUILD THE APP (windows)
+ATTENTION
+cordova is only portable on windows phone 8+, if you are still with an old phone system consider working with a more mature device such as a windows phone 8.1+
+RESPECT :)
+:: on WINDOWS
+install nodejs
+open the console by pressing : win+r > cmd > enter
+type in the console: npm install -g cordova
+type in the console: cordova create SAVEme
+replace the www/index.html by the one sourced here
+replace the 000000000 number by the one of your archangel in index.html
+install the plugins
+type in the console: cd SAVEme
+22-11-2015|type in the console: cordova plugin add https://github.com/cordova-sms/cordova-sms-plugin.git
+22-11-2015|type in the console: cordova plugin add cordova-plugin-camera
+22-11-2015|type in the console: cordova plugin add cordova-plugin-geolocation
+22-11-2015|type in the console: cordova plugin add cordova-plugin-battery-status
+01-12-2015|type in the console: cordova plugin add https://github.com/macdonst/SpeechRecognitionPlugin
+plug your device :)
+type in the console: cordova platform add windows
+type in the console: cordova run windows
+check on your device
+:: on MAC
+install nodejs
+open the terminal : Applications/Utilities/terminal
+type in the terminal: sudo npm install -g cordova
+type in the terminal: cordova create SAVEme
+replace the www/index.html by the one sourced here
+replace the 000000000 number by the one of your archangel in index.html
+install the plugins
+type in the console: cd SAVEme
+22-11-2015|type in the console: cordova plugin add https://github.com/cordova-sms/cordova-sms-plugin.git
+22-11-2015|type in the console: cordova plugin add cordova-plugin-camera
+22-11-2015|type in the console: cordova plugin add cordova-plugin-geolocation
+22-11-2015|type in the console: cordova plugin add cordova-plugin-battery-status
+01-12-2015|type in the console: cordova plugin add https://github.com/macdonst/SpeechRecognitionPlugin
+plug your device :)
+type in the terminal: cordova platform add windows
+type in the terminal: cordova run windows
+check on your device
+:: on LINUX -- to check
+same as mac installation :)
